@@ -106,20 +106,20 @@
         </div>
     </header><div class="e-content entry-content">
     <div>
-<p>Me compre una AverTV Volar Back HD, ya que necesitaba una sintonizadora usb para el servidor que no tiene ranuras pci.</p>
+<img alt="/imgpost/avermedia_a850_dvb-t-stick.jpg" src="imgpost/avermedia_a850_dvb-t-stick.jpg"><p>Me compre una AverTV Volar Back HD, ya que necesitaba una sintonizadora usb para el servidor que no tiene ranuras pci.</p>
 <p>En debian lenny al traer un kernel  2.6.26 no tenemos soporte para esta sintonizadora y tendremos que descargarnos los drivers y compilarlos.</p>
 <p>Necesitamos que estén instalados mercurial, dvb-utils y los headers del kernel. Cualquiera de estas cosas las podemos instalar con apt.</p>
 <p>Una vez que tenemos todo lo necesario nos descargamos las fuentes del driver con:</p>
-<pre class="code shell"><a name="rest_code_7ac05d7a2cf04ddb908e070904271d2f-1"></a>hg clone http://linuxtv.org/hg/v4l-dvb
+<pre class="code shell"><a name="rest_code_196bc8fb938246b98b7a298e3a13d1a5-1"></a>hg clone http://linuxtv.org/hg/v4l-dvb
 </pre>
 <p>entramos dentro del directorio</p>
-<pre class="code shell"><a name="rest_code_5dd7dfd75c654f039d67e4fae2525e6b-1"></a><span class="nb">cd</span> v4l-dvb
+<pre class="code shell"><a name="rest_code_6bbb3625485e4f81ade614172de3b9a4-1"></a><span class="nb">cd</span> v4l-dvb
 </pre>
 <p>compilamos</p>
-<pre class="code shell"><a name="rest_code_dacd3d4421044abe8e15923b69656df0-1"></a>make
+<pre class="code shell"><a name="rest_code_f9d915235e844caaa6670e65a4d948c0-1"></a>make
 </pre>
 <p>instalamos</p>
-<pre class="code shell"><a name="rest_code_a7951544f99f475fb34f4ad7c9e87a1a-1"></a>make install
+<pre class="code shell"><a name="rest_code_a1905a8a4f3945ca87cc56bd3ce301df-1"></a>make install
 </pre>
 <p>Ahora solo nos queda descargar el firmware desde <a class="reference external" href="http://dl.getdropbox.com/u/971641/UbuntuBlog/dvb-usb-af9015.fw/">aqui</a></p>
 <p>y lo guardamos en /lib/firmware. Con esto ya tenemos finalizado la instalacion. Solo nos queda enchufar la sintonizadra e instalar un programa para ver la tv como kaffeine si aun no lo teneis instalado</p>
