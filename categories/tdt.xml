@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Manuel villaverde (Publicaciones sobre Tdt)</title><link>http://villaverde.nom.es</link><description></description><atom:link href="http://villaverde.nom.es/categories/tdt.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><copyright>Contents © 2018 &lt;a href="mailto:vialmajo@gmail.om"&gt;Manuel Villaverde&lt;/a&gt; </copyright><lastBuildDate>Thu, 22 Feb 2018 23:53:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Instalar Avertv Volar Black HD en debian lenny</title><link>http://villaverde.nom.es/posts/instalar-avertv-volar-black-hd-en-debian-lenny/</link><dc:creator>Manuel Villaverde</dc:creator><description>&lt;div&gt;&lt;p&gt;Me compre una AverTV Volar Back HD, ya que necesitaba una sintonizadora usb para el servidor que no tiene ranuras pci.&lt;/p&gt;
+&lt;p&gt;En debian lenny al traer un kernel  2.6.26 no tenemos soporte para esta sintonizadora y tendremos que descargarnos los drivers y compilarlos.&lt;/p&gt;
+&lt;p&gt;Necesitamos que estén instalados mercurial, dvb-utils y los headers del kernel. Cualquiera de estas cosas las podemos instalar con apt.&lt;/p&gt;
+&lt;p&gt;Una vez que tenemos todo lo necesario nos descargamos las fuentes del driver con:&lt;/p&gt;
+&lt;pre class="code shell"&gt;&lt;a name="rest_code_7ac05d7a2cf04ddb908e070904271d2f-1"&gt;&lt;/a&gt;hg clone http://linuxtv.org/hg/v4l-dvb
+&lt;/pre&gt;&lt;p&gt;entramos dentro del directorio&lt;/p&gt;
+&lt;pre class="code shell"&gt;&lt;a name="rest_code_5dd7dfd75c654f039d67e4fae2525e6b-1"&gt;&lt;/a&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; v4l-dvb
+&lt;/pre&gt;&lt;p&gt;compilamos&lt;/p&gt;
+&lt;pre class="code shell"&gt;&lt;a name="rest_code_dacd3d4421044abe8e15923b69656df0-1"&gt;&lt;/a&gt;make
+&lt;/pre&gt;&lt;p&gt;instalamos&lt;/p&gt;
+&lt;pre class="code shell"&gt;&lt;a name="rest_code_a7951544f99f475fb34f4ad7c9e87a1a-1"&gt;&lt;/a&gt;make install
+&lt;/pre&gt;&lt;p&gt;Ahora solo nos queda descargar el firmware desde &lt;a class="reference external" href="http://dl.getdropbox.com/u/971641/UbuntuBlog/dvb-usb-af9015.fw/"&gt;aqui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;y lo guardamos en /lib/firmware. Con esto ya tenemos finalizado la instalacion. Solo nos queda enchufar la sintonizadra e instalar un programa para ver la tv como kaffeine si aun no lo teneis instalado&lt;/p&gt;&lt;/div&gt;</description><category>Dvb</category><category>Linux</category><category>Tdt</category><guid>http://villaverde.nom.es/posts/instalar-avertv-volar-black-hd-en-debian-lenny/</guid><pubDate>Sat, 19 Dec 2009 21:52:45 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Manuel villaverde (Publicaciones sobre Git)</title><link>http://villaverde.nom.es</link><description></description><atom:link href="http://villaverde.nom.es/categories/git.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><copyright>Contents © 2018 &lt;a href="mailto:vialmajo@gmail.om"&gt;Manuel Villaverde&lt;/a&gt; </copyright><lastBuildDate>Thu, 22 Feb 2018 23:53:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Git - Deshaciendo la preparación de un archivo antes de hacer commit</title><link>http://villaverde.nom.es/posts/git-deshaciendo-la-preparacion-de-un-archivo-antes-de-hacer-commit/</link><dc:creator>Manuel Villaverde</dc:creator><description>&lt;div&gt;&lt;img alt="/imgpost/git.png" src="http://villaverde.nom.es/imgpost/git.png"&gt;
+&lt;p&gt;Cuando por error añadimos un archivo al área de preparación para hacer un comiit podemos quitarlo con reset HEAD archivo&lt;/p&gt;
+&lt;p&gt;Pongo un ejemplo&lt;/p&gt;
+&lt;pre class="code shell"&gt;&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-1"&gt;&lt;/a&gt;$ git add readme.txt
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-2"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-3"&gt;&lt;/a&gt;$ git status
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-4"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-5"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# On branch master&lt;/span&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-6"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-7"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# Changes not staged for commit:&lt;/span&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-8"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-9"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# (use "git reset HEAD &amp;lt;file&amp;gt;..." to unstage)&lt;/span&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-10"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-11"&gt;&lt;/a&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-12"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-13"&gt;&lt;/a&gt;&lt;span class="c1"&gt;#    modified:   readme.txt&lt;/span&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-14"&gt;&lt;/a&gt;
+&lt;a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-15"&gt;&lt;/a&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Git</category><guid>http://villaverde.nom.es/posts/git-deshaciendo-la-preparacion-de-un-archivo-antes-de-hacer-commit/</guid><pubDate>Thu, 23 Apr 2015 21:53:33 GMT</pubDate></item></channel></rss>

@@ -1,11 +1,175 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>mi web github</title>
-  </head>
-  <body>
-    <h1>Este es mi sitio</h1>
-<h2>villaverde</h2>
-  </body>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Web personal de Manuel Villaverde">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manuel villaverde</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/html4css1.css" rel="stylesheet" type="text/css">
+<link href="assets/css/nikola_rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="http://villaverde.nom.es/">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/git-deshaciendo-la-preparacion-de-un-archivo-antes-de-hacer-commit/" type="text/html">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Mostrar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://villaverde.nom.es/">
+
+                <span id="blog-title">Manuel villaverde</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Archivo</a>
+                </li>
+<li>
+<a href="categories/">Etiquetas</a>
+                </li>
+<li>
+<a href="rss.xml">Canal RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/git-deshaciendo-la-preparacion-de-un-archivo-antes-de-hacer-commit/" class="u-url">Git - Deshaciendo la preparación de un archivo antes de hacer commit</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Manuel Villaverde
+            </span></p>
+            <p class="dateline"><a href="posts/git-deshaciendo-la-preparacion-de-un-archivo-antes-de-hacer-commit/" rel="bookmark"><time class="published dt-published" datetime="2015-04-23T22:53:33+01:00" title="2015-04-23 22:53">2015-04-23 22:53</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<img alt="/imgpost/git.png" src="imgpost/git.png"><p>Cuando por error añadimos un archivo al área de preparación para hacer un comiit podemos quitarlo con reset HEAD archivo</p>
+<p>Pongo un ejemplo</p>
+<pre class="code shell"><a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-1"></a>$ git add readme.txt
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-2"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-3"></a>$ git status
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-4"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-5"></a><span class="c1"># On branch master</span>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-6"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-7"></a><span class="c1"># Changes not staged for commit:</span>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-8"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-9"></a><span class="c1"># (use "git reset HEAD &lt;file&gt;..." to unstage)</span>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-10"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-11"></a><span class="c1">#</span>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-12"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-13"></a><span class="c1">#    modified:   readme.txt</span>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-14"></a>
+<a name="rest_code_879ae0ec42d74bb9be096679e4e2cfef-15"></a><span class="c1">#</span>
+</pre>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/instalar-avertv-volar-black-hd-en-debian-lenny/" class="u-url">Instalar Avertv Volar Black HD en debian lenny</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Manuel Villaverde
+            </span></p>
+            <p class="dateline"><a href="posts/instalar-avertv-volar-black-hd-en-debian-lenny/" rel="bookmark"><time class="published dt-published" datetime="2009-12-19T22:52:45+01:00" title="2009-12-19 22:52">2009-12-19 22:52</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Me compre una AverTV Volar Back HD, ya que necesitaba una sintonizadora usb para el servidor que no tiene ranuras pci.</p>
+<p>En debian lenny al traer un kernel  2.6.26 no tenemos soporte para esta sintonizadora y tendremos que descargarnos los drivers y compilarlos.</p>
+<p>Necesitamos que estén instalados mercurial, dvb-utils y los headers del kernel. Cualquiera de estas cosas las podemos instalar con apt.</p>
+<p>Una vez que tenemos todo lo necesario nos descargamos las fuentes del driver con:</p>
+<pre class="code shell"><a name="rest_code_7ac05d7a2cf04ddb908e070904271d2f-1"></a>hg clone http://linuxtv.org/hg/v4l-dvb
+</pre>
+<p>entramos dentro del directorio</p>
+<pre class="code shell"><a name="rest_code_5dd7dfd75c654f039d67e4fae2525e6b-1"></a><span class="nb">cd</span> v4l-dvb
+</pre>
+<p>compilamos</p>
+<pre class="code shell"><a name="rest_code_dacd3d4421044abe8e15923b69656df0-1"></a>make
+</pre>
+<p>instalamos</p>
+<pre class="code shell"><a name="rest_code_a7951544f99f475fb34f4ad7c9e87a1a-1"></a>make install
+</pre>
+<p>Ahora solo nos queda descargar el firmware desde <a class="reference external" href="http://dl.getdropbox.com/u/971641/UbuntuBlog/dvb-usb-af9015.fw/">aqui</a></p>
+<p>y lo guardamos en /lib/firmware. Con esto ya tenemos finalizado la instalacion. Solo nos queda enchufar la sintonizadra e instalar un programa para ver la tv como kaffeine si aun no lo teneis instalado</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/montando-un-servidor-de-bajo-consumo/" class="u-url">Montando un servidor de bajo consumo</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Manuel Villaverde
+            </span></p>
+            <p class="dateline"><a href="posts/montando-un-servidor-de-bajo-consumo/" rel="bookmark"><time class="published dt-published" datetime="2008-03-07T22:51:25+01:00" title="2008-03-07 22:51">2008-03-07 22:51</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<img alt="/imgpost/dscf0084.jpg" src="imgpost/dscf0084.jpg"><p>Después de que mi viejo pentium III empezase a desfallecer y dar problemas, me puse a pensar en que tendría que empezar a sustituirlo por uno nuevo.</p>
+<p>Después de buscar por internet que comprar para montar mi servidor, me decidí por un ordenador de bajo consumo y sin ventiladores.</p>
+<p>Al final me decidí por una via epia modelo sn-10000 que no trae ventiladores y que consume a pleno rendimiento 25w.</p>
+<p>Alguna de las características por las que me decidí por este modelo y no otro de via epia fueron:</p>
+<ul class="simple">
+<li>No trae ventiladores</li>
+<li>usa memoria DDR2 y admite 4gb de ram</li>
+<li>Trae un puerto minipci y otro pci express.</li>
+<li>Lector de memoria compact flash integrado en placa</li>
+<li>Dejo unas fotos que saque cuando me llego la placa.</li>
+</ul>
+</div>
+    </div>
+    </article>
+</div>
+
+
+
+
+
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:vialmajo@gmail.om">Manuel Villaverde</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script src="assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
 </html>
