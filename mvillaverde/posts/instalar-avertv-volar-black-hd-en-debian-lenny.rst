@@ -6,6 +6,7 @@
 .. link:
 .. description:
 .. type: text
+
 .. image:: /imgpost/avermedia_a850_dvb-t-stick.jpg
 
 Me compre una AverTV Volar Back HD, ya que necesitaba una sintonizadora usb para el servidor que no tiene ranuras pci.
